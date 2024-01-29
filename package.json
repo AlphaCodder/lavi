@@ -1,0 +1,17 @@
+{
+  "name": "lavi",
+  "version": "0.0.0",
+  "description": "Personalised for your household. Cooked in your own kitchen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shivam@datagrind.ai",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "superstruct": "^1.0.3"
+  }
+}
