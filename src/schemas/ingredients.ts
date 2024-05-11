@@ -1,11 +1,17 @@
-// interface IngredientSchema {
-//     IngredientID: number
-//     RawMaterialID: number
-//     PrepMethod: string
-//     IngredientName: string
-//     Quantity: number
-//     UnitOfMeasure: string
-//     RecipeID: number
-//     DishID: number
-//     Dishes: Array<DishSchema>
-// }
+interface RawIngredientSchema {
+    RawIngredientID: number
+    RawIngredientName: string
+    RawIngredientType: string
+    RawIngredientNutrition: string
+}
+
+interface DishIngredientSchema {
+    DishID: number
+    RawIngredientID: string
+    Quantity: number
+    UnitOfMeasure: string
+    PrepMethod: string
+}   
+
+
+// Dishes -> Ingredients -> RawIngredients -> RawIngredientNutrition -> NutritionProfile -> HealthBenefit

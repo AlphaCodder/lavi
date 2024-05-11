@@ -4,6 +4,7 @@
   "description": "Personalised for your household. Cooked in your own kitchen.",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "shivam@datagrind.ai",
@@ -12,6 +13,9 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "mongodb": "^6.3.0",
     "superstruct": "^1.0.3"
   }
 }

@@ -1,19 +1,5 @@
 // v0
 
-interface Recipe {
-    RecipeID: number;
-    AuthorID: number;
-    Title: string;
-    Ingredients: string;
-    Steps: string;
-    NutritionInfo: string;
-    Cuisine: string;
-    FoodGroup: string;
-    MealTiming: string;
-    ImageURL: string;
-    Description: string;
-}
-
 interface HouseholdProfile {
     ProfileID: number;
     ProfileName: string;
@@ -38,11 +24,7 @@ interface Meal {
     ImageUpload: string;
     MealTiming: string;
     Cuisine: string; // Derived
-    ServingSize: {
-        Nos?: number;
-        Adults?: number;
-        Kids?: number;
-    };
+    ServingSize: string;
     FoodGroup: string;
     NutritionProfile: string;
     HealthBenefit: string;
@@ -112,7 +94,7 @@ interface User {
       // Other meal plan-related information
     };
     // Other relevant user details
-  }
+}
   
 
 interface MealPlan {
